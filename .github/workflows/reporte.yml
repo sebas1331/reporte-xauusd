@@ -1,0 +1,41 @@
+name: Reporte XAUUSD
+
+on:
+  schedule:
+    - cron: "0 22 * * 0"    # domingo 17:00 Ecuador: reporte de la semana
+    - cron: "0 12 * * 1-5"  # lunes a viernes 07:00 Ecuador: precio y calendario
+    - cron: "30 21 * * 1-5" # lunes a viernes 16:30 Ecuador: cierre del día
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Rehacer el reporte semanal completo"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reporte
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generar reporte
+        env:
+          FORCE: ${{ inputs.force && '1' || '' }}
+        run: python build.py
+      - name: Guardar
+        run: |
+          git config user.name "reporte-bot"
+          git config user.email "reporte-bot@users.noreply.github.com"
+          git add data.json history
+          git diff --cached --quiet || git commit -m "Reporte $(date -u +%F\ %H:%M)"
+          git pull --rebase --autostash
+          git push

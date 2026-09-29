@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>XAUUSD Semanal</title>
+<meta name="description" content="Reporte semanal del oro: sesgo, niveles clave y calendario económico.">
+<meta name="theme-color" content="#0f0e0b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="XAUUSD">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+/* Layout: panel de una columna pensado para iPhone; en escritorio pasa a dos columnas (niveles | calendario) */
+:root{
+  --bg:#0f0e0b; --panel:#18160f; --panel2:#201d14; --line:#2e2a1c; --fg:#ece6d6; --mute:#a39a84;
+  --gold:#d9ad45; --up:#72c08e; --down:#e2735c;
+  --display:"Instrument Serif",Georgia,serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--bg);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5;
+  padding:calc(env(safe-area-inset-top,0px) + 18px) max(16px,env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 40px) max(16px,env(safe-area-inset-left,0px))}
+.wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+h1,h2,h3{margin:0;font-weight:400;text-wrap:balance}
+h1{font-family:var(--display);font-size:clamp(30px,6vw,44px);line-height:1.05}
+h2{font-family:var(--display);font-size:26px;color:var(--gold);line-height:1.1}
+h3{font-size:15px;font-weight:600}
+p{margin:0}
+.mute{color:var(--mute)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.top{display:flex;flex-direction:column;gap:6px}
+.meta{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:12px;color:var(--mute)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0}
+section{display:flex;flex-direction:column;gap:12px;min-width:0}
+/* hero */
+.hero{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:start}
+.bias{font-family:var(--display);font-size:clamp(32px,7vw,46px);line-height:1}
+.bias.down{color:var(--down)} .bias.up{color:var(--up)} .bias.flat{color:var(--fg)}
+.conv{font-size:13px;color:var(--mute)}
+.px{text-align:right;display:flex;flex-direction:column;gap:2px}
+.px .v{font-family:var(--mono);font-size:22px;font-variant-numeric:tabular-nums}
+.px .c{font-size:13px;font-family:var(--mono)}
+.meter{position:relative;height:8px;border-radius:4px;background:linear-gradient(90deg,var(--down),var(--line) 45%,var(--line) 55%,var(--up))}
+.meter i{position:absolute;top:-4px;width:4px;height:16px;border-radius:2px;background:var(--fg);transform:translateX(-50%)}
+.meter-ax{display:flex;justify-content:space-between;font-size:11px;color:var(--mute);margin-top:-6px}
+.frase{font-family:var(--display);font-size:20px;line-height:1.3}
+.factors{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px}
+.f{display:grid;grid-template-columns:22px 1fr;gap:8px;align-items:start;padding:9px 10px;background:var(--panel2);border-radius:10px;font-size:13px}
+.f b{font-weight:500;display:block}
+.f span.d{color:var(--mute)}
+.f .s{font-family:var(--mono);text-align:center;border-radius:6px;font-size:13px;line-height:20px}
+.f .s.p{color:var(--up)} .f .s.n{color:var(--down)} .f .s.z{color:var(--mute)}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.stat{background:var(--bg);padding:12px 14px;display:flex;flex-direction:column;gap:1px;min-width:0}
+.stat .v{font-family:var(--mono);font-size:17px;font-variant-numeric:tabular-nums}
+.stat .k{font-size:12px;color:var(--mute)}
+.stat .ch{font-size:12px;font-family:var(--mono)}
+.upc{color:var(--up)} .dnc{color:var(--down)}
+/* two cols */
+.cols{display:grid;grid-template-columns:1fr;gap:22px}
+@media (min-width:900px){.cols{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}}
+/* ladder */
+.ladder{border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.lv{display:grid;grid-template-columns:118px 1fr auto;gap:10px;align-items:center;padding:11px 14px;border-top:1px solid var(--line)}
+.lv:first-child{border-top:0}
+.lv .p{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:15px}
+.lv.r .p{color:var(--down)} .lv.s .p{color:var(--up)}
+.lv.now{background:rgba(217,173,69,.12)} .lv.now .p{color:var(--gold)}
+.lv .t{font-size:14px;min-width:0}
+.lv .t small{display:block;color:var(--mute);font-size:12px;line-height:1.35}
+.lv.far{opacity:.55}
+.dots{color:var(--gold);font-size:10px;letter-spacing:2px;white-space:nowrap}
+.tag{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--gold);color:var(--gold);white-space:nowrap}
+.note{font-size:12px;color:var(--mute)}
+/* calendar */
+.tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:1 0 auto;min-width:62px;background:none;border:1px solid var(--line);color:var(--fg);border-radius:10px;padding:8px 10px;font:inherit;font-size:13px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px}
+.tab small{font-size:10px;color:var(--gold);letter-spacing:1px}
+.tab[aria-selected="true"]{background:var(--gold);border-color:var(--gold);color:#17140c}
+.tab[aria-selected="true"] small{color:#17140c}
+.tab:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.dayhead{display:flex;flex-direction:column;gap:2px}
+.ev{display:flex;flex-direction:column;gap:6px;padding:12px 0;border-top:1px solid var(--line)}
+.ev:first-child{border-top:0;padding-top:0}
+.ev .row{display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+.ev .name{font-weight:500}
+.ev .when{font-family:var(--mono);font-size:13px;color:var(--gold);white-space:nowrap}
+.ev .nums{display:flex;gap:16px;font-size:12px;color:var(--mute)}
+.ev .nums b{font-family:var(--mono);color:var(--fg);font-weight:500;margin-left:4px}
+.ev .lec{font-size:13px;color:var(--mute)}
+.ev.low .name{color:var(--mute)}
+.bw{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.bw div{padding:10px 12px;border-radius:10px;font-size:13px;background:var(--panel2)}
+.bw b{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px;font-weight:600}
+.bw .g b{color:var(--up)} .bw .b b{color:var(--down)}
+.rule{font-size:13px;color:var(--mute);border-left:2px solid var(--gold);padding-left:10px}
+/* scenarios */
+.sc{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.sc .card{gap:6px}
+.sc .t{font-family:var(--mono);font-size:20px;font-variant-numeric:tabular-nums}
+.sc .up .t{color:var(--up)} .sc .down .t{color:var(--down)}
+.sc .base{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.inv{padding:12px 14px;border:1px dashed var(--gold);border-radius:12px;font-size:14px}
+/* recap */
+details{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+summary{cursor:pointer;font-family:var(--display);font-size:22px;color:var(--gold);list-style:none;display:flex;justify-content:space-between;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--mono);font-size:18px}
+details[open] summary::after{content:"−"}
+.rc{display:flex;flex-direction:column;gap:0;margin-top:12px}
+.rc div{display:grid;grid-template-columns:62px 1fr;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:14px}
+.rc span:first-child{color:var(--gold);font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chip{font-family:var(--mono);font-size:12px;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--mute)}
+.chip.hit{border-color:var(--gold);color:var(--gold)}
+.verd{margin-top:12px;font-size:14px}
+/* settings */
+.set{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:13px;color:var(--mute)}
+.set input{width:90px;background:var(--panel2);border:1px solid var(--line);border-radius:8px;color:var(--fg);font-family:var(--mono);font-size:16px;padding:6px 8px}
+footer{font-size:12px;color:var(--mute);display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:14px}
+.empty{padding:40px 0;display:flex;flex-direction:column;gap:10px;max-width:60ch}
+@media (max-width:480px){
+  .lv{grid-template-columns:96px 1fr;}
+  .lv .dots,.lv .tag{grid-column:2}
+  .hero{grid-template-columns:1fr}
+  .px{text-align:left}
+}
+@media (prefers-reduced-motion:no-preference){.meter i{transition:left .6s ease}}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"><p class="mute">Cargando reporte…</p></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function fmt(x, d = 0) {
+  if (x == null || isNaN(x)) return "—";
+  const [i, f] = Math.abs(x).toFixed(d).split(".");
+  return (x < 0 ? "−" : "") + i.replace(/\B(?=(\d{3})+(?!\d))/g, ".") + (f ? "," + f : "");
+}
+const pct = (x, d = 2) => x == null ? "—" : (x >= 0 ? "+" : "") + fmt(x, d) + " %";
+const cls = x => x > 0 ? "upc" : x < 0 ? "dnc" : "";
+
+let OFF = 0;
+try { OFF = parseFloat(localStorage.getItem("xau_offset")) || 0; } catch (e) {}
+const P = x => x + OFF;
+const lvTxt = n => n.lo === n.hi ? fmt(P(n.lo)) : `${fmt(P(n.lo))} – ${fmt(P(n.hi))}`;
+
+let D = null, dayIdx = 0;
+
+function pickDay(cal) {
+  const hoy = new Date().toLocaleDateString("en-CA", {timeZone: "America/Guayaquil"});
+  const i = cal.findIndex(c => c.fecha === hoy);
+  return i >= 0 ? i : 0;
+}
+
+function scenarios(d) {
+  const res = d.niveles.filter(n => n.tipo === "r").sort((a, b) => a.mid - b.mid);
+  const sup = d.niveles.filter(n => n.tipo === "s").sort((a, b) => b.mid - a.mid);
+  const t = arr => arr.slice(0, 2).map(lvTxt).join(" → ") || "—";
+  const dir = d.sesgo.dir;
+  const sc = [
+    {dir: "down", h: "Escenario bajista", t: t(sup),
+     p: "Datos de EE. UU. por encima de lo previsto, dólar y bono a 10 años al alza, petróleo firme. El precio rechaza la primera resistencia y busca los soportes."},
+    {dir: "up", h: "Escenario alcista", t: t(res),
+     p: "Datos por debajo de lo previsto, dólar y rendimientos cediendo, petróleo a la baja. El precio recupera y ataca las resistencias."}
+  ];
+  if (dir === "up") sc.reverse();
+  let inv;
+  if (dir === "down") inv = `El sesgo bajista se invalida con un cierre diario por encima de ${res.length ? lvTxt(res[Math.min(1, res.length - 1)]) : "la resistencia mayor"}.`;
+  else if (dir === "up") inv = `El sesgo alcista se invalida con un cierre diario por debajo de ${sup.length ? lvTxt(sup[Math.min(1, sup.length - 1)]) : "el soporte mayor"}.`;
+  else inv = `Sin dirección clara. Un cierre diario por encima de ${res[0] ? lvTxt(res[0]) : "la primera resistencia"} o por debajo de ${sup[0] ? lvTxt(sup[0]) : "el primer soporte"} marca la dirección de la semana.`;
+  return {sc, inv, res, sup};
+}
+
+function frase(d, s) {
+  const tops = d.calendario.filter(c => c.imp === 3 && !/^Sin|^Datos sec/.test(c.titulo)).map(c => `${c.titulo.toLowerCase()} (${c.corto.toLowerCase()})`).slice(0, 3);
+  const r = s.res[0] ? lvTxt(s.res[0]) : "—", u = s.sup[0] ? lvTxt(s.sup[0]) : "—";
+  return `Sesgo ${d.sesgo.texto.toLowerCase()} con el oro en ${fmt(P(d.vivo.precio))}. Primera resistencia en ${r} y primer soporte en ${u}.` +
+    (tops.length ? ` La semana la marcan ${tops.join(", ")}.` : "");
+}
+
+function ladder(d) {
+  const rows = d.niveles.map(n => ({...n, sort: n.mid}));
+  rows.push({tipo: "now", sort: d.vivo.precio});
+  rows.sort((a, b) => b.sort - a.sort);
+  return rows.map(n => n.tipo === "now"
+    ? `<div class="lv now"><span class="p">${fmt(P(d.vivo.precio), 1)}</span><span class="t">Precio actual<small>Cierre del ${esc(new Date(d.vivo.fecha + "T12:00").toLocaleDateString("es-EC", {weekday: "long", day: "numeric", month: "short"}))}${d.vivo.semana_max != null ? ` · Semana: ${fmt(P(d.vivo.semana_min))} – ${fmt(P(d.vivo.semana_max))}` : ""}</small></span><span></span></div>`
+    : `<div class="lv ${n.tipo}${n.alcanzable ? "" : " far"}"><span class="p">${lvTxt(n)}</span><span class="t">${esc(n.tag)}<small>${esc(n.motivo)}${n.alcanzable ? "" : " · fuera del rango semanal medio"}</small></span>${n.tocado ? `<span class="tag">Tocado</span>` : `<span class="dots" title="Fuerza">${"●".repeat(n.fuerza)}${"○".repeat(3 - n.fuerza)}</span>`}</div>`
+  ).join("");
+}
+
+function dayView(c) {
+  if (!c) return `<p class="mute">Calendario no disponible.</p>`;
+  const evs = c.eventos.length ? c.eventos.map(e => `
+    <div class="ev${e.imp < 3 ? " low" : ""}">
+      <div class="row"><span class="name">${esc(e.dato)}${e.usd ? "" : ""}</span><span class="when">${esc(e.hora)}</span></div>
+      ${(e.prev || e.ant) ? `<div class="nums"><span>Previsión<b>${esc(e.prev || "—")}</b></span><span>Anterior<b>${esc(e.ant || "—")}</b></span><span>${"●".repeat(e.imp)}</span></div>` : ""}
+      <p class="lec">${esc(e.lectura)}</p>
+    </div>`).join("") : `<p class="mute">Sin publicaciones relevantes este día.</p>`;
+  return `<div class="dayhead"><h3>${esc(c.dia)} · ${esc(c.titulo)}</h3></div>
+    <div>${evs}</div>
+    <div class="bw"><div class="g"><b>Mejor para el oro</b>${esc(c.mejor)}</div><div class="b"><b>Peor para el oro</b>${esc(c.peor)}</div></div>
+    ${c.regla ? `<p class="rule">${esc(c.regla)}</p>` : ""}`;
+}
+
+function render() {
+  const d = D, s = scenarios(d), m = d.macro || {};
+  const gen = new Date(d.generado);
+  const genTxt = isNaN(gen) ? d.generado : gen.toLocaleString("es-EC", {timeZone: "America/Guayaquil", weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit"});
+  const pos = Math.max(0, Math.min(100, (d.sesgo.puntos + d.sesgo.max) / (2 * d.sesgo.max) * 100));
+  const wkch = d.vivo.semana_apertura ? (d.vivo.precio / d.vivo.semana_apertura - 1) * 100 : null;
+  const cal = d.calendario || [];
+  $("#app").innerHTML = `
+  <header class="top">
+    <span class="eyebrow">XAUUSD · Reporte semanal</span>
+    <h1>${esc(d.semana.texto)}</h1>
+    <div class="meta"><span>Actualizado: ${esc(genTxt)}</span><span>Horas en Ecuador (UTC−5)</span>${OFF ? `<span>Ajuste de bróker ${OFF > 0 ? "+" : ""}${fmt(OFF, 1)}</span>` : ""}</div>
+  </header>
+
+  <div class="card">
+    <div class="hero">
+      <div><div class="bias ${d.sesgo.dir}">${esc(d.sesgo.texto)}</div><div class="conv">Convicción ${esc(d.sesgo.conviccion)} · ${d.sesgo.puntos > 0 ? "+" : ""}${d.sesgo.puntos} de ±${d.sesgo.max}</div></div>
+      <div class="px"><span class="v">${fmt(P(d.vivo.precio), 1)}</span><span class="c ${cls(wkch)}">${wkch == null ? "Semana sin empezar" : pct(wkch) + " en la semana"}</span></div>
+    </div>
+    <div class="meter" aria-label="Puntuación del sesgo"><i style="left:${pos}%"></i></div>
+    <div class="meter-ax"><span>Bajista</span><span>Neutral</span><span>Alcista</span></div>
+    <p class="frase">${esc(frase(d, s))}</p>
+    <div class="factors">${d.sesgo.factores.map(f => `<div class="f"><span class="s ${f.v > 0 ? "p" : f.v < 0 ? "n" : "z"}">${f.v > 0 ? "▲" : f.v < 0 ? "▼" : "·"}</span><span><b>${esc(f.k)}</b><span class="d">${esc(f.d)}</span></span></div>`).join("")}</div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span class="k">Oro, semana anterior</span><span class="v">${fmt(P(m.oro?.v), 1)}</span><span class="ch ${cls(m.oro?.ch)}">${pct(m.oro?.ch)}</span></div>
+    <div class="stat"><span class="k">Dólar (DXY)</span><span class="v">${fmt(m.dxy?.v, 2)}</span><span class="ch ${cls(-(m.dxy?.ch || 0))}">${pct(m.dxy?.ch)}</span></div>
+    <div class="stat"><span class="k">Bono 10 años</span><span class="v">${m.tnx ? fmt(m.tnx.v, 2) + " %" : "—"}</span><span class="ch ${cls(-(m.tnx?.bp || 0))}">${m.tnx ? (m.tnx.bp >= 0 ? "+" : "") + fmt(m.tnx.bp) + " pb" : "—"}</span></div>
+    <div class="stat"><span class="k">Brent</span><span class="v">${m.brent ? fmt(m.brent.v, 1) + " $" : "—"}</span><span class="ch ${cls(-(m.brent?.ch || 0))}">${pct(m.brent?.ch, 1)}</span></div>
+    <div class="stat"><span class="k">Rango diario medio (ATR)</span><span class="v">${fmt(d.atr)}</span><span class="ch mute">puntos</span></div>
+    <div class="stat"><span class="k">Rango semanal medio</span><span class="v">${fmt(d.rango_semanal)}</span><span class="ch mute">últimas 10 semanas</span></div>
+  </div>
+
+  <div class="cols">
+    <section>
+      <h2>Niveles clave</h2>
+      <div class="ladder">${ladder(d)}</div>
+      <p class="note">Rango esperado de la semana: ${fmt(P(d.ref - d.rango_semanal))} – ${fmt(P(d.ref + d.rango_semanal))} (cierre anterior ± rango semanal medio). Los puntos indican la fuerza del nivel por confluencia.</p>
+    </section>
+    <section>
+      <h2>Calendario</h2>
+      ${d.calendario_ok === false ? `<p class="note">No se pudo actualizar el calendario en la última ejecución.</p>` : ""}
+      <div class="tabs" role="tablist">${cal.map((c, i) => `<button class="tab" role="tab" id="tab${i}" aria-selected="${i === dayIdx}" data-i="${i}">${esc(c.corto)} ${esc(c.fecha.slice(8))}<small>${"●".repeat(c.imp) || "·"}</small></button>`).join("")}</div>
+      <div class="card" id="day">${dayView(cal[dayIdx])}</div>
+    </section>
+  </div>
+
+  <section>
+    <h2>Escenarios</h2>
+    <div class="sc">${s.sc.map((x, i) => `<div class="card ${x.dir}">${i === 0 && d.sesgo.dir !== "flat" ? `<span class="base">Escenario base</span>` : ""}<h3>${x.h}</h3><span class="t">${x.t}</span><p class="mute">${x.p}</p></div>`).join("")}</div>
+    <p class="inv">${esc(s.inv)}</p>
+  </section>
+
+  ${d.recap ? `<details${new Date().getDay() === 1 ? " open" : ""}>
+    <summary>Semana anterior</summary>
+    <div class="rc">${d.recap.items.map(i => `<div><span>${esc(i.d)}</span><span>${esc(i.t)}</span></div>`).join("")}</div>
+    ${d.recap.niveles?.length ? `<div class="chips">${d.recap.niveles.map(n => `<span class="chip${n.tocado ? " hit" : ""}">${esc(n.txt)}${n.tocado ? " ✓" : ""}</span>`).join("")}</div>` : ""}
+    <p class="verd">${esc(d.recap.veredicto)}</p>
+  </details>` : ""}
+
+  <div class="set"><label for="off">Ajuste de bróker (suma a todos los precios):</label><input id="off" type="number" step="0.1" inputmode="decimal" value="${OFF || ""}" placeholder="0"><span>Úsalo si tu MT5 cotiza distinto a la fuente.</span></div>
+
+  <footer>
+    <p>Fuente de precios: ${esc(d.fuente)}. Calendario: Forex Factory. Macro: Yahoo Finance.</p>
+    <p>Reporte generado automáticamente con reglas fijas, sin intervención humana. Material educativo, no es asesoramiento financiero.</p>
+  </footer>`;
+
+  document.querySelectorAll(".tab").forEach(b => b.onclick = () => {
+    dayIdx = +b.dataset.i;
+    document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t === b));
+    $("#day").innerHTML = dayView(cal[dayIdx]);
+  });
+  $("#off").onchange = e => {
+    OFF = parseFloat(String(e.target.value).replace(",", ".")) || 0;
+    try { localStorage.setItem("xau_offset", OFF); } catch (err) {}
+    render();
+  };
+}
+
+fetch("data.json?t=" + Date.now(), {cache: "no-store"})
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(d => { D = d; dayIdx = pickDay(d.calendario || []); render(); })
+  .catch(() => {
+    $("#app").innerHTML = `<div class="empty"><span class="eyebrow">XAUUSD · Reporte semanal</span><h1>Aún no hay reporte</h1>
+    <p class="mute">El primer reporte se genera al ejecutar el proceso en GitHub: pestaña <b>Actions</b> → <b>Reporte XAUUSD</b> → <b>Run workflow</b>. Tarda un par de minutos.</p></div>`;
+  });
+</script>
+</body>
+</html>
