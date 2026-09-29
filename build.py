@@ -13,6 +13,7 @@ import io
 import json
 import os
 import time
+import urllib.parse
 import urllib.request
 from zoneinfo import ZoneInfo
 
@@ -23,7 +24,8 @@ HIST = os.path.join(ROOT, "history")
 FIXTURES = os.environ.get("FIXTURES")  # carpeta con datos de prueba (solo para tests locales)
 FORCE = os.environ.get("FORCE") == "1"
 NOW = dt.datetime.fromisoformat(os.environ["NOW"]).replace(tzinfo=TZ) if os.environ.get("NOW") else dt.datetime.now(TZ)
-UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+# Yahoo devuelve 429 con el User-Agent de Safari; con el de Chrome responde bien.
+UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36",
       "Accept": "*/*"}
 DIAS = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
 DIAS_C = ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"]
@@ -74,7 +76,7 @@ def yahoo(symbol, rng="1y"):
     last = None
     for host in ("query1", "query2"):
         try:
-            raw = fetch(f"https://{host}.finance.yahoo.com/v8/finance/chart/{symbol}?range={rng}&interval=1d", key)
+            raw = fetch(f"https://{host}.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(symbol)}?range={rng}&interval=1d", key)
             res = json.loads(raw)["chart"]["result"][0]
             q = res["indicators"]["quote"][0]
             out = []
