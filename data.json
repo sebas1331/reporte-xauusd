@@ -325,6 +325,28 @@
      "signo": -1
     },
     {
+     "hora": "14:30",
+     "pais": "EE. UU.",
+     "dato": "Habla President Trump",
+     "imp": 2,
+     "prev": "",
+     "ant": "",
+     "lectura": "Tono duro (más subidas) presiona al oro. Tono prudente lo apoya.",
+     "usd": true,
+     "signo": 0
+    },
+    {
+     "hora": "17:00",
+     "pais": "EE. UU.",
+     "dato": "Habla Kashkari",
+     "imp": 2,
+     "prev": "",
+     "ant": "",
+     "lectura": "Tono duro (más subidas) presiona al oro. Tono prudente lo apoya.",
+     "usd": true,
+     "signo": 0
+    },
+    {
      "hora": "Todo el día",
      "pais": "Canadá",
      "dato": "Festivo en Canadá",
@@ -455,12 +477,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4213.89990234375,
-  "fecha": "2026-09-29",
+  "precio": 4186.7998046875,
+  "fecha": "2026-09-30",
   "semana_max": 4315.60009765625,
   "semana_min": 4143.10009765625,
   "semana_apertura": 4315.0
  },
- "generado": "2026-09-29T19:36-05:00",
+ "generado": "2026-09-30T12:39-05:00",
  "modo": "diario"
 }
