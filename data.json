@@ -452,9 +452,9 @@
      "pais": "EE. UU.",
      "dato": "Nóminas no agrícolas",
      "imp": 3,
-     "prev": "90K",
+     "prev": "89K",
      "ant": "162K",
-     "lectura": "Por encima de 90K: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 89K: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     },
@@ -470,19 +470,19 @@
      "signo": 1
     }
    ],
-   "mejor": "Salario por hora m/m por debajo de 0,3%; Nóminas no agrícolas por debajo de 90K; Tasa de desempleo por encima de 4,1%",
-   "peor": "Salario por hora m/m por encima de 0,3%; Nóminas no agrícolas por encima de 90K; Tasa de desempleo por debajo de 4,1%",
+   "mejor": "Salario por hora m/m por debajo de 0,3%; Nóminas no agrícolas por debajo de 89K; Tasa de desempleo por encima de 4,1%",
+   "peor": "Salario por hora m/m por encima de 0,3%; Nóminas no agrícolas por encima de 89K; Tasa de desempleo por debajo de 4,1%",
    "regla": "Si salen mixtos, manda Nóminas no agrícolas. Después, confirma con la reacción del dólar y del bono a 10 años."
   }
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4176.2001953125,
-  "fecha": "2026-09-30",
+  "precio": 4204.0,
+  "fecha": "2026-10-01",
   "semana_max": 4315.60009765625,
   "semana_min": 4143.10009765625,
   "semana_apertura": 4315.0
  },
- "generado": "2026-09-30T19:38-05:00",
+ "generado": "2026-10-01T13:04-05:00",
  "modo": "diario"
 }
