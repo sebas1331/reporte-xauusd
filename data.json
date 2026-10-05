@@ -422,9 +422,31 @@
    "fecha": "2026-10-08",
    "dia": "Jueves 8",
    "corto": "Jue",
-   "imp": 2,
-   "titulo": "Datos secundarios",
+   "imp": 3,
+   "titulo": "Habla BOE Gov Bailey (Reino Unido)",
    "eventos": [
+    {
+     "hora": "03:30",
+     "pais": "EE. UU.",
+     "dato": "Habla Waller",
+     "imp": 2,
+     "prev": "",
+     "ant": "",
+     "lectura": "Tono duro (más subidas) presiona al oro. Tono prudente lo apoya.",
+     "usd": true,
+     "signo": 0
+    },
+    {
+     "hora": "07:15",
+     "pais": "Reino Unido",
+     "dato": "Habla BOE Gov Bailey (Reino Unido)",
+     "imp": 3,
+     "prev": "",
+     "ant": "",
+     "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
+     "usd": false,
+     "signo": 0
+    },
     {
      "hora": "07:30",
      "pais": "EE. UU.",
@@ -500,11 +522,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4176.5,
-  "fecha": "2026-10-04",
-  "semana_max": null,
-  "semana_min": null
+  "precio": 4166.7001953125,
+  "fecha": "2026-10-05",
+  "semana_max": 4198.89990234375,
+  "semana_min": 4150.39990234375,
+  "semana_apertura": 4169.39990234375
  },
- "generado": "2026-10-04T19:18-05:00",
- "modo": "semanal"
+ "generado": "2026-10-05T15:19-05:00",
+ "modo": "diario"
 }
