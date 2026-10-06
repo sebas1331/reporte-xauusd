@@ -101,7 +101,7 @@
    "alcanzable": true,
    "fuerza": 1,
    "tag": "Resistencia inmediata",
-   "tocado": false
+   "tocado": true
   },
   {
    "lo": 4143.1,
@@ -113,7 +113,7 @@
    "alcanzable": true,
    "fuerza": 3,
    "tag": "Soporte inmediato",
-   "tocado": false
+   "tocado": true
   },
   {
    "lo": 3993.8,
@@ -522,12 +522,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4161.39990234375,
-  "fecha": "2026-10-05",
-  "semana_max": 4179.60009765625,
-  "semana_min": 4160.10009765625,
-  "semana_apertura": 4169.2001953125
+  "precio": 4191.60009765625,
+  "fecha": "2026-10-06",
+  "semana_max": 4208.0,
+  "semana_min": 4130.7001953125,
+  "semana_apertura": 4169.39990234375
  },
- "generado": "2026-10-05T20:48-05:00",
+ "generado": "2026-10-06T12:58-05:00",
  "modo": "diario"
 }
