@@ -101,7 +101,7 @@
    "alcanzable": true,
    "fuerza": 1,
    "tag": "Resistencia inmediata",
-   "tocado": true
+   "tocado": false
   },
   {
    "lo": 4143.1,
@@ -113,7 +113,7 @@
    "alcanzable": true,
    "fuerza": 3,
    "tag": "Soporte inmediato",
-   "tocado": true
+   "tocado": false
   },
   {
    "lo": 3993.8,
@@ -475,7 +475,7 @@
      "pais": "Canadá",
      "dato": "Employment Change (Canadá)",
      "imp": 3,
-     "prev": "6,2K",
+     "prev": "6,3K",
      "ant": "-41,7K",
      "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
      "usd": false,
@@ -497,9 +497,9 @@
      "pais": "EE. UU.",
      "dato": "Confianza Michigan (prelim.)",
      "imp": 2,
-     "prev": "47,6",
+     "prev": "47,5",
      "ant": "47,8",
-     "lectura": "Por encima de 47,6: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 47,5: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     },
@@ -522,12 +522,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4191.60009765625,
+  "precio": 4189.10009765625,
   "fecha": "2026-10-06",
-  "semana_max": 4208.0,
-  "semana_min": 4130.7001953125,
+  "semana_max": 4198.89990234375,
+  "semana_min": 4150.39990234375,
   "semana_apertura": 4169.39990234375
  },
- "generado": "2026-10-06T12:58-05:00",
+ "generado": "2026-10-06T19:51-05:00",
  "modo": "diario"
 }
