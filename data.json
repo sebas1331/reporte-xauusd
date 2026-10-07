@@ -101,7 +101,7 @@
    "alcanzable": true,
    "fuerza": 1,
    "tag": "Resistencia inmediata",
-   "tocado": false
+   "tocado": true
   },
   {
    "lo": 4143.1,
@@ -113,7 +113,7 @@
    "alcanzable": true,
    "fuerza": 3,
    "tag": "Soporte inmediato",
-   "tocado": false
+   "tocado": true
   },
   {
    "lo": 3993.8,
@@ -403,6 +403,17 @@
    "titulo": "Actas de la Fed",
    "eventos": [
     {
+     "hora": "12:00",
+     "pais": "EE. UU.",
+     "dato": "Habla President Trump",
+     "imp": 2,
+     "prev": "",
+     "ant": "",
+     "lectura": "Tono duro (más subidas) presiona al oro. Tono prudente lo apoya.",
+     "usd": true,
+     "signo": 0
+    },
+    {
      "hora": "13:00",
      "pais": "EE. UU.",
      "dato": "Actas de la Fed",
@@ -522,12 +533,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4189.10009765625,
-  "fecha": "2026-10-06",
-  "semana_max": 4198.89990234375,
-  "semana_min": 4150.39990234375,
+  "precio": 4138.39990234375,
+  "fecha": "2026-10-07",
+  "semana_max": 4212.39990234375,
+  "semana_min": 4091.199951171875,
   "semana_apertura": 4169.39990234375
  },
- "generado": "2026-10-06T19:51-05:00",
+ "generado": "2026-10-07T13:28-05:00",
  "modo": "diario"
 }
