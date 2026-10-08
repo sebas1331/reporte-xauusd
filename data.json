@@ -486,7 +486,7 @@
      "pais": "Canadá",
      "dato": "Employment Change (Canadá)",
      "imp": 3,
-     "prev": "6,3K",
+     "prev": "6,1K",
      "ant": "-41,7K",
      "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
      "usd": false,
@@ -533,12 +533,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4144.2001953125,
-  "fecha": "2026-10-07",
+  "precio": 4151.7001953125,
+  "fecha": "2026-10-08",
   "semana_max": 4212.39990234375,
-  "semana_min": 4128.10009765625,
+  "semana_min": 4091.199951171875,
   "semana_apertura": 4169.39990234375
  },
- "generado": "2026-10-07T20:07-05:00",
+ "generado": "2026-10-08T13:27-05:00",
  "modo": "diario"
 }
