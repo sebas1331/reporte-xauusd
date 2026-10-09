@@ -533,12 +533,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4151.7001953125,
+  "precio": 4174.0,
   "fecha": "2026-10-08",
   "semana_max": 4212.39990234375,
   "semana_min": 4091.199951171875,
   "semana_apertura": 4169.39990234375
  },
- "generado": "2026-10-08T13:27-05:00",
+ "generado": "2026-10-08T20:17-05:00",
  "modo": "diario"
 }
