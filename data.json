@@ -428,7 +428,7 @@
      "pais": "Australia",
      "dato": "Employment Change (Australia)",
      "imp": 3,
-     "prev": "20,0K",
+     "prev": "19,6K",
      "ant": "39,5K",
      "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
      "usd": false,
@@ -484,9 +484,9 @@
      "pais": "EE. UU.",
      "dato": "Ventas minoristas subyacentes m/m",
      "imp": 3,
-     "prev": "0,5%",
+     "prev": "0,6%",
      "ant": "1,4%",
-     "lectura": "Por encima de 0,5%: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 0,6%: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     },
@@ -495,9 +495,9 @@
      "pais": "EE. UU.",
      "dato": "IPP m/m",
      "imp": 3,
-     "prev": "0,5%",
+     "prev": "0,6%",
      "ant": "0,4%",
-     "lectura": "Por encima de 0,5%: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 0,6%: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     },
@@ -517,9 +517,9 @@
      "pais": "EE. UU.",
      "dato": "Índice Fed de Filadelfia",
      "imp": 2,
-     "prev": "26,5",
+     "prev": "28,2",
      "ant": "37,8",
-     "lectura": "Por encima de 26,5: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 28,2: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     },
@@ -528,9 +528,9 @@
      "pais": "EE. UU.",
      "dato": "Subsidios por desempleo",
      "imp": 2,
-     "prev": "195K",
+     "prev": "199K",
      "ant": "197K",
-     "lectura": "Por encima de 195K: favorable para el oro. Por debajo: negativo.",
+     "lectura": "Por encima de 199K: favorable para el oro. Por debajo: negativo.",
      "usd": true,
      "signo": 1
     },
@@ -557,8 +557,8 @@
      "signo": 0
     }
    ],
-   "mejor": "IPP subyacente m/m por debajo de 0,3%; Ventas minoristas subyacentes m/m por debajo de 0,5%; IPP m/m por debajo de 0,5%",
-   "peor": "IPP subyacente m/m por encima de 0,3%; Ventas minoristas subyacentes m/m por encima de 0,5%; IPP m/m por encima de 0,5%",
+   "mejor": "IPP subyacente m/m por debajo de 0,3%; Ventas minoristas subyacentes m/m por debajo de 0,6%; IPP m/m por debajo de 0,6%",
+   "peor": "IPP subyacente m/m por encima de 0,3%; Ventas minoristas subyacentes m/m por encima de 0,6%; IPP m/m por encima de 0,6%",
    "regla": "Si salen mixtos, manda Ventas minoristas subyacentes m/m. Después, confirma con la reacción del dólar y del bono a 10 años."
   },
   {
@@ -575,12 +575,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4194.60009765625,
+  "precio": 4193.2001953125,
   "fecha": "2026-10-12",
   "semana_max": 4242.2998046875,
-  "semana_min": 4178.10009765625,
+  "semana_min": 4173.7998046875,
   "semana_apertura": 4220.7998046875
  },
- "generado": "2026-10-12T15:56-05:00",
+ "generado": "2026-10-12T21:38-05:00",
  "modo": "diario"
 }
