@@ -1,14 +1,14 @@
 {
  "version": 1,
  "semana": {
-  "lunes": "2026-10-12",
-  "viernes": "2026-10-16",
-  "texto": "12 de octubre – 16 de octubre de 2026"
+  "lunes": "2026-10-19",
+  "viernes": "2026-10-23",
+  "texto": "19 de octubre – 23 de octubre de 2026"
  },
  "fuente": "Futuros del oro GC (Yahoo). Suelen cotizar unos dólares por encima del spot de tu bróker",
- "ref": 4228.2001953125,
- "atr": 77.49283272879464,
- "rango_semanal": 208.6799560546875,
+ "ref": 4202.89990234375,
+ "atr": 69.9927978515625,
+ "rango_semanal": 187.3699951171875,
  "sesgo": {
   "texto": "Neutral",
   "dir": "flat",
@@ -19,7 +19,7 @@
    {
     "k": "Precio vs media de 20 días",
     "v": -1,
-    "d": "4.228 frente a 4.261"
+    "d": "4.203 frente a 4.205"
    },
    {
     "k": "Media de 20 vs media de 50",
@@ -28,49 +28,49 @@
    },
    {
     "k": "Semana anterior del oro",
-    "v": 1,
-    "d": "+1,6 %"
+    "v": 0,
+    "d": "-0,3 %"
    },
    {
     "k": "Dólar (DXY) en la semana",
-    "v": 0,
-    "d": "102,14 (+0,20 %)"
+    "v": 1,
+    "d": "101,87 (-0,34 %)"
    },
    {
     "k": "Bono 10 años EE. UU.",
-    "v": 0,
-    "d": "5,24 % (-3 pb)"
+    "v": 1,
+    "d": "5,10 % (-15 pb)"
    },
    {
     "k": "Petróleo Brent (vía inflación)",
-    "v": 0,
-    "d": "103,3 $ (+1,1 %)"
+    "v": -1,
+    "d": "108,3 $ (+3,5 %)"
    }
   ]
  },
  "macro": {
   "dxy": {
-   "v": 102.13800048828125,
-   "ch": 0.204061789936949
+   "v": 101.86699676513672,
+   "ch": -0.33558587458010214
   },
   "tnx": {
-   "v": 5.24399995803833,
-   "bp": -3.299999237060547
+   "v": 5.0980000495910645,
+   "bp": -14.599990844726562
   },
   "brent": {
-   "v": 103.33000183105469,
-   "ch": 1.056236509588926
+   "v": 108.3499984741211,
+   "ch": 3.466383891428304
   },
   "oro": {
-   "v": 4228.2001953125,
-   "ch": 1.583268714828856
+   "v": 4202.89990234375,
+   "ch": -0.3178118958441334
   }
  },
  "niveles": [
   {
    "lo": 4439.8,
    "hi": 4450.0,
-   "mid": 4443.9,
+   "mid": 4441.8,
    "score": 6.0,
    "motivo": "Máximo de swing del 18/09 · Máximo del último mes · Número redondo",
    "tipo": "r",
@@ -80,27 +80,15 @@
    "tocado": false
   },
   {
-   "lo": 4402,
-   "hi": 4402,
-   "mid": 4401.8,
-   "score": 4.5,
-   "motivo": "Número redondo · Máximo de swing del 17/06",
-   "tipo": "r",
-   "alcanzable": true,
-   "fuerza": 2,
-   "tag": "Resistencia",
-   "tocado": false
-  },
-  {
-   "lo": 4250.0,
+   "lo": 4233.7,
    "hi": 4259.0,
-   "mid": 4256.0,
-   "score": 3.5,
-   "motivo": "Máximo de swing del 02/10 · Número redondo",
+   "mid": 4244.7,
+   "score": 12.0,
+   "motivo": "Máximo de la semana anterior · Máximo de hace dos semanas · Máximo de swing del 12/10",
    "tipo": "r",
    "alcanzable": true,
-   "fuerza": 1,
-   "tag": "Resistencia inmediata",
+   "fuerza": 3,
+   "tag": "Resistencia",
    "tocado": false
   },
   {
@@ -109,83 +97,100 @@
    "mid": 4215.5,
    "score": 2.0,
    "motivo": "Máximo de swing del 06/07",
+   "tipo": "r",
+   "alcanzable": true,
+   "fuerza": 1,
+   "tag": "Resistencia inmediata",
+   "tocado": false
+  },
+  {
+   "lo": 4171,
+   "hi": 4171,
+   "mid": 4171.4,
+   "score": 2.0,
+   "motivo": "Máximo de swing del 22/07",
    "tipo": "s",
    "alcanzable": true,
    "fuerza": 1,
    "tag": "Soporte inmediato",
-   "tocado": true
-  },
-  {
-   "lo": 4143.1,
-   "hi": 4150.0,
-   "mid": 4144.5,
-   "score": 6.0,
-   "motivo": "Mínimo de hace dos semanas · Mínimo de swing del 28/09 · Número redondo",
-   "tipo": "s",
-   "alcanzable": true,
-   "fuerza": 3,
-   "tag": "Soporte",
-   "tocado": true
+   "tocado": false
   },
   {
    "lo": 4091.2,
    "hi": 4100.0,
-   "mid": 4093.2,
-   "score": 10.5,
-   "motivo": "Mínimo de la semana anterior · Mínimo de swing del 07/10 · Mínimo del último mes",
+   "mid": 4094.0,
+   "score": 15.5,
+   "motivo": "Mínimo de la semana anterior · Mínimo de hace dos semanas · Mínimo de swing del 07/10",
    "tipo": "s",
    "alcanzable": true,
    "fuerza": 3,
+   "tag": "Soporte",
+   "tocado": false
+  },
+  {
+   "lo": 3950.0,
+   "hi": 3963.0,
+   "mid": 3957.4,
+   "score": 6.0,
+   "motivo": "Mínimo de swing del 30/06 · Mínimo de swing del 17/07 · Número redondo",
+   "tipo": "s",
+   "alcanzable": false,
+   "fuerza": 3,
    "tag": "Soporte mayor",
-   "tocado": true
+   "tocado": false
   }
  ],
  "recap": {
   "items": [
    {
-    "d": "Lun 5",
-    "t": "Cierre 4.156,8 (-0,13 %). Rango 4.150 – 4.199."
+    "d": "Lun 12",
+    "t": "Cierre 4.190,6 (-0,61 %). Rango 4.178 – 4.242."
    },
    {
-    "d": "Mar 6",
-    "t": "Cierre 4.187,1 (+0,73 %). Rango 4.131 – 4.212."
+    "d": "Mar 13",
+    "t": "Cierre 4.177,3 (-0,32 %). Rango 4.170 – 4.225."
    },
    {
-    "d": "Mié 7",
-    "t": "Cierre 4.140,7 (-1,11 %). Rango 4.091 – 4.198."
+    "d": "Mié 14",
+    "t": "Cierre 4.107,9 (-1,66 %). Rango 4.095 – 4.194."
    },
    {
-    "d": "Jue 8",
-    "t": "Cierre 4.157,0 (+0,39 %). Rango 4.128 – 4.171."
+    "d": "Jue 15",
+    "t": "Cierre 4.170,1 (+1,51 %). Rango 4.121 – 4.198."
    },
    {
-    "d": "Vie 9",
-    "t": "Cierre 4.216,3 (+1,43 %). Rango 4.156 – 4.234."
+    "d": "Vie 16",
+    "t": "Cierre 4.181,1 (+0,26 %). Rango 4.168 – 4.220."
    },
    {
-    "d": "Dom 11",
-    "t": "Cierre 4.228,2 (+0,28 %). Rango 4.209 – 4.236."
+    "d": "Dom 18",
+    "t": "Cierre 4.202,9 (+0,52 %). Rango 4.176 – 4.207."
    }
   ],
-  "cierre": 4228.2001953125,
-  "max": 4235.7998046875,
-  "min": 4091.199951171875,
-  "cambio": 1.583268714828856,
-  "veredicto": "El sesgo anterior era bajista. La semana cerró +1,58 %, así que el sesgo no acertó en dirección. Niveles alcanzados: 4.200, 4.143 – 4.150.",
+  "cierre": 4202.89990234375,
+  "max": 4242.2998046875,
+  "min": 4095.0,
+  "cambio": -0.3178118958441334,
+  "veredicto": "El sesgo anterior era neutral. La semana cerró -0,32 %, así que el sesgo acertó en dirección. Niveles alcanzados: 4.216, 4.143 – 4.150, 4.091 – 4.100.",
   "niveles": [
+   {
+    "txt": "4.440 – 4.450",
+    "tipo": "r",
+    "tocado": false
+   },
    {
     "txt": "4.402",
     "tipo": "r",
     "tocado": false
    },
    {
-    "txt": "4.273 – 4.278",
+    "txt": "4.250 – 4.259",
     "tipo": "r",
     "tocado": false
    },
    {
-    "txt": "4.200",
-    "tipo": "r",
+    "txt": "4.216",
+    "tipo": "s",
     "tocado": true
    },
    {
@@ -194,35 +199,30 @@
     "tocado": true
    },
    {
-    "txt": "3.994 – 4.000",
+    "txt": "4.091 – 4.100",
     "tipo": "s",
-    "tocado": false
-   },
-   {
-    "txt": "3.950 – 3.976",
-    "tipo": "s",
-    "tocado": false
+    "tocado": true
    }
   ],
-  "acierto": false
+  "acierto": true
  },
  "_prev_report": {
   "semana": {
-   "lunes": "2026-10-05",
-   "viernes": "2026-10-09",
-   "texto": "5 de octubre – 9 de octubre de 2026"
+   "lunes": "2026-10-12",
+   "viernes": "2026-10-16",
+   "texto": "12 de octubre – 16 de octubre de 2026"
   },
   "sesgo": {
-   "texto": "Bajista",
-   "dir": "down",
-   "conviccion": "alta",
-   "puntos": -5,
+   "texto": "Neutral",
+   "dir": "flat",
+   "conviccion": "baja",
+   "puntos": -1,
    "max": 6,
    "factores": [
     {
      "k": "Precio vs media de 20 días",
      "v": -1,
-     "d": "4.176 frente a 4.319"
+     "d": "4.228 frente a 4.261"
     },
     {
      "k": "Media de 20 vs media de 50",
@@ -231,27 +231,39 @@
     },
     {
      "k": "Semana anterior del oro",
-     "v": -1,
-     "d": "-3,3 %"
+     "v": 1,
+     "d": "+1,6 %"
     },
     {
      "k": "Dólar (DXY) en la semana",
-     "v": -1,
-     "d": "101,90 (+0,92 %)"
+     "v": 0,
+     "d": "102,14 (+0,20 %)"
     },
     {
      "k": "Bono 10 años EE. UU.",
-     "v": -1,
-     "d": "5,28 % (+9 pb)"
+     "v": 0,
+     "d": "5,24 % (-3 pb)"
     },
     {
      "k": "Petróleo Brent (vía inflación)",
      "v": 0,
-     "d": "102,1 $ (-2,1 %)"
+     "d": "103,3 $ (+1,1 %)"
     }
    ]
   },
   "niveles": [
+   {
+    "lo": 4439.8,
+    "hi": 4450.0,
+    "mid": 4443.9,
+    "score": 6.0,
+    "motivo": "Máximo de swing del 18/09 · Máximo del último mes · Número redondo",
+    "tipo": "r",
+    "alcanzable": false,
+    "fuerza": 3,
+    "tag": "Resistencia mayor",
+    "tocado": false
+   },
    {
     "lo": 4402,
     "hi": 4402,
@@ -259,100 +271,99 @@
     "score": 4.5,
     "motivo": "Número redondo · Máximo de swing del 17/06",
     "tipo": "r",
-    "alcanzable": false,
-    "fuerza": 2,
-    "tag": "Resistencia mayor",
-    "tocado": false
-   },
-   {
-    "lo": 4273.3,
-    "hi": 4278.3,
-    "mid": 4275.8,
-    "score": 4.5,
-    "motivo": "Mínimo de swing del 16/09 · Mínimo de hace dos semanas",
-    "tipo": "r",
     "alcanzable": true,
     "fuerza": 2,
     "tag": "Resistencia",
     "tocado": false
    },
    {
-    "lo": 4200,
-    "hi": 4200,
-    "mid": 4200.0,
-    "score": 2.0,
-    "motivo": "Número redondo",
+    "lo": 4250.0,
+    "hi": 4259.0,
+    "mid": 4256.0,
+    "score": 3.5,
+    "motivo": "Máximo de swing del 02/10 · Número redondo",
     "tipo": "r",
     "alcanzable": true,
     "fuerza": 1,
     "tag": "Resistencia inmediata",
+    "tocado": false
+   },
+   {
+    "lo": 4216,
+    "hi": 4216,
+    "mid": 4215.5,
+    "score": 2.0,
+    "motivo": "Máximo de swing del 06/07",
+    "tipo": "s",
+    "alcanzable": true,
+    "fuerza": 1,
+    "tag": "Soporte inmediato",
     "tocado": true
    },
    {
     "lo": 4143.1,
     "hi": 4150.0,
-    "mid": 4144.0,
-    "score": 9.5,
-    "motivo": "Mínimo de la semana anterior · Mínimo de swing del 28/09 · Mínimo del último mes",
+    "mid": 4144.5,
+    "score": 6.0,
+    "motivo": "Mínimo de hace dos semanas · Mínimo de swing del 28/09 · Número redondo",
     "tipo": "s",
     "alcanzable": true,
     "fuerza": 3,
-    "tag": "Soporte inmediato",
+    "tag": "Soporte",
     "tocado": true
    },
    {
-    "lo": 3993.8,
-    "hi": 4000.0,
-    "mid": 3996.9,
-    "score": 4.5,
-    "motivo": "Mínimo de swing del 29/07 · Número redondo",
+    "lo": 4091.2,
+    "hi": 4100.0,
+    "mid": 4093.2,
+    "score": 10.5,
+    "motivo": "Mínimo de la semana anterior · Mínimo de swing del 07/10 · Mínimo del último mes",
     "tipo": "s",
     "alcanzable": true,
-    "fuerza": 2,
-    "tag": "Soporte",
-    "tocado": false
-   },
-   {
-    "lo": 3950.0,
-    "hi": 3975.7,
-    "mid": 3962.6,
-    "score": 8.5,
-    "motivo": "Mínimo de swing del 30/06 · Mínimo de swing del 17/07 · Mínimo de swing del 24/06",
-    "tipo": "s",
-    "alcanzable": false,
     "fuerza": 3,
     "tag": "Soporte mayor",
-    "tocado": false
+    "tocado": true
    }
   ]
  },
  "calendario": [
   {
-   "fecha": "2026-10-12",
-   "dia": "Lunes 12",
+   "fecha": "2026-10-19",
+   "dia": "Lunes 19",
    "corto": "Lun",
-   "imp": 0,
-   "titulo": "Datos secundarios",
+   "imp": 3,
+   "titulo": "IPC m/m (Canadá) y Median CPI y/y (Canadá) y Trimmed CPI y/y (Canadá)",
    "eventos": [
     {
-     "hora": "Todo el día",
-     "pais": "EE. UU.",
-     "dato": "Festivo en EE. UU.",
-     "imp": 0,
-     "prev": "",
-     "ant": "",
-     "lectura": "Menos liquidez: movimientos más irregulares.",
+     "hora": "07:30",
+     "pais": "Canadá",
+     "dato": "IPC m/m (Canadá)",
+     "imp": 3,
+     "prev": "0,2%",
+     "ant": "-0,1%",
+     "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
      "usd": false,
      "signo": 0
     },
     {
-     "hora": "Todo el día",
+     "hora": "07:30",
      "pais": "Canadá",
-     "dato": "Festivo en Canadá",
-     "imp": 0,
-     "prev": "",
-     "ant": "",
-     "lectura": "Menos liquidez: movimientos más irregulares.",
+     "dato": "Median CPI y/y (Canadá)",
+     "imp": 3,
+     "prev": "2,0%",
+     "ant": "2,0%",
+     "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
+     "usd": false,
+     "signo": 0
+    },
+    {
+     "hora": "07:30",
+     "pais": "Canadá",
+     "dato": "Trimmed CPI y/y (Canadá)",
+     "imp": 3,
+     "prev": "1,9%",
+     "ant": "1,9%",
+     "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
      "usd": false,
      "signo": 0
     }
@@ -362,8 +373,8 @@
    "regla": "Día de contexto: el precio lo mueven el dólar, los rendimientos, el petróleo y los titulares."
   },
   {
-   "fecha": "2026-10-13",
-   "dia": "Martes 13",
+   "fecha": "2026-10-20",
+   "dia": "Martes 20",
    "corto": "Mar",
    "imp": 0,
    "titulo": "Sin datos relevantes",
@@ -373,201 +384,114 @@
    "regla": "Día de contexto: el precio lo mueven el dólar, los rendimientos, el petróleo y los titulares."
   },
   {
-   "fecha": "2026-10-14",
-   "dia": "Miércoles 14",
+   "fecha": "2026-10-21",
+   "dia": "Miércoles 21",
    "corto": "Mié",
    "imp": 3,
-   "titulo": "IPC subyacente m/m y Core CPI y/y",
+   "titulo": "IPC a/a (Reino Unido) y CPI q/q (Nueva Zelanda)",
    "eventos": [
     {
-     "hora": "07:30",
-     "pais": "EE. UU.",
-     "dato": "IPC subyacente m/m",
+     "hora": "01:00",
+     "pais": "Reino Unido",
+     "dato": "IPC a/a (Reino Unido)",
      "imp": 3,
-     "prev": "0,2%",
-     "ant": "0,3%",
-     "lectura": "Por encima de 0,2%: negativo para el oro. Por debajo: favorable.",
-     "usd": true,
-     "signo": -1
-    },
-    {
-     "hora": "07:30",
-     "pais": "EE. UU.",
-     "dato": "Core CPI y/y",
-     "imp": 3,
-     "prev": "2,5%",
-     "ant": "2,4%",
-     "lectura": "Por encima de 2,5%: negativo para el oro. Por debajo: favorable.",
-     "usd": true,
-     "signo": -1
-    },
-    {
-     "hora": "07:30",
-     "pais": "EE. UU.",
-     "dato": "IPC m/m",
-     "imp": 3,
-     "prev": "0,6%",
-     "ant": "0,4%",
-     "lectura": "Por encima de 0,6%: negativo para el oro. Por debajo: favorable.",
-     "usd": true,
-     "signo": -1
-    },
-    {
-     "hora": "07:30",
-     "pais": "EE. UU.",
-     "dato": "IPC a/a",
-     "imp": 3,
-     "prev": "3,6%",
-     "ant": "3,4%",
-     "lectura": "Por encima de 3,6%: negativo para el oro. Por debajo: favorable.",
-     "usd": true,
-     "signo": -1
-    },
-    {
-     "hora": "19:30",
-     "pais": "Australia",
-     "dato": "Employment Change (Australia)",
-     "imp": 3,
-     "prev": "19,6K",
-     "ant": "39,5K",
+     "prev": "3,4%",
+     "ant": "3,1%",
      "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
      "usd": false,
      "signo": 0
     },
     {
-     "hora": "19:30",
-     "pais": "Australia",
-     "dato": "Tasa de desempleo (Australia)",
+     "hora": "16:45",
+     "pais": "Nueva Zelanda",
+     "dato": "CPI q/q (Nueva Zelanda)",
      "imp": 3,
-     "prev": "4,6%",
-     "ant": "4,6%",
+     "prev": "0,8%",
+     "ant": "1,5%",
      "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
      "usd": false,
      "signo": 0
     }
    ],
-   "mejor": "IPC subyacente m/m por debajo de 0,2%; Core CPI y/y por debajo de 2,5%; IPC m/m por debajo de 0,6%",
-   "peor": "IPC subyacente m/m por encima de 0,2%; Core CPI y/y por encima de 2,5%; IPC m/m por encima de 0,6%",
-   "regla": "Si salen mixtos, manda IPC subyacente m/m. Después, confirma con la reacción del dólar y del bono a 10 años."
+   "mejor": "Dólar y rendimientos a la baja, petróleo cediendo.",
+   "peor": "Dólar y rendimientos al alza, petróleo subiendo.",
+   "regla": "Día de contexto: el precio lo mueven el dólar, los rendimientos, el petróleo y los titulares."
   },
   {
-   "fecha": "2026-10-15",
-   "dia": "Jueves 15",
+   "fecha": "2026-10-22",
+   "dia": "Jueves 22",
    "corto": "Jue",
-   "imp": 3,
-   "titulo": "Ventas minoristas subyacentes m/m y Ventas minoristas m/m",
+   "imp": 2,
+   "titulo": "Datos secundarios",
    "eventos": [
-    {
-     "hora": "01:00",
-     "pais": "Reino Unido",
-     "dato": "GDP m/m (Reino Unido)",
-     "imp": 3,
-     "prev": "-0,1%",
-     "ant": "0,4%",
-     "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
-     "usd": false,
-     "signo": 0
-    },
-    {
-     "hora": "07:30",
-     "pais": "EE. UU.",
-     "dato": "IPP subyacente m/m",
-     "imp": 3,
-     "prev": "0,3%",
-     "ant": "0,2%",
-     "lectura": "Por encima de 0,3%: negativo para el oro. Por debajo: favorable.",
-     "usd": true,
-     "signo": -1
-    },
-    {
-     "hora": "07:30",
-     "pais": "EE. UU.",
-     "dato": "Ventas minoristas subyacentes m/m",
-     "imp": 3,
-     "prev": "0,6%",
-     "ant": "1,4%",
-     "lectura": "Por encima de 0,6%: negativo para el oro. Por debajo: favorable.",
-     "usd": true,
-     "signo": -1
-    },
-    {
-     "hora": "07:30",
-     "pais": "EE. UU.",
-     "dato": "IPP m/m",
-     "imp": 3,
-     "prev": "0,6%",
-     "ant": "0,4%",
-     "lectura": "Por encima de 0,6%: negativo para el oro. Por debajo: favorable.",
-     "usd": true,
-     "signo": -1
-    },
-    {
-     "hora": "07:30",
-     "pais": "EE. UU.",
-     "dato": "Ventas minoristas m/m",
-     "imp": 3,
-     "prev": "0,3%",
-     "ant": "1,2%",
-     "lectura": "Por encima de 0,3%: negativo para el oro. Por debajo: favorable.",
-     "usd": true,
-     "signo": -1
-    },
-    {
-     "hora": "07:30",
-     "pais": "EE. UU.",
-     "dato": "Índice Fed de Filadelfia",
-     "imp": 2,
-     "prev": "28,2",
-     "ant": "37,8",
-     "lectura": "Por encima de 28,2: negativo para el oro. Por debajo: favorable.",
-     "usd": true,
-     "signo": -1
-    },
     {
      "hora": "07:30",
      "pais": "EE. UU.",
      "dato": "Subsidios por desempleo",
      "imp": 2,
-     "prev": "199K",
-     "ant": "197K",
-     "lectura": "Por encima de 199K: favorable para el oro. Por debajo: negativo.",
+     "prev": "200K",
+     "ant": "199K",
+     "lectura": "Por encima de 200K: favorable para el oro. Por debajo: negativo.",
      "usd": true,
      "signo": 1
-    },
-    {
-     "hora": "21:00",
-     "pais": "Reino Unido",
-     "dato": "Habla BOE Gov Bailey (Reino Unido)",
-     "imp": 3,
-     "prev": "",
-     "ant": "",
-     "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
-     "usd": false,
-     "signo": 0
-    },
-    {
-     "hora": "22:30",
-     "pais": "EE. UU.",
-     "dato": "Habla Presidente de la Fedman Warsh",
-     "imp": 3,
-     "prev": "",
-     "ant": "",
-     "lectura": "Tono duro (más subidas) presiona al oro. Tono prudente lo apoya.",
-     "usd": true,
-     "signo": 0
     }
    ],
-   "mejor": "IPP subyacente m/m por debajo de 0,3%; Ventas minoristas subyacentes m/m por debajo de 0,6%; IPP m/m por debajo de 0,6%",
-   "peor": "IPP subyacente m/m por encima de 0,3%; Ventas minoristas subyacentes m/m por encima de 0,6%; IPP m/m por encima de 0,6%",
-   "regla": "Si salen mixtos, manda Ventas minoristas subyacentes m/m. Después, confirma con la reacción del dólar y del bono a 10 años."
+   "mejor": "Dólar y rendimientos a la baja, petróleo cediendo.",
+   "peor": "Dólar y rendimientos al alza, petróleo subiendo.",
+   "regla": "Día de contexto: el precio lo mueven el dólar, los rendimientos, el petróleo y los titulares."
   },
   {
-   "fecha": "2026-10-16",
-   "dia": "Viernes 16",
+   "fecha": "2026-10-23",
+   "dia": "Viernes 23",
    "corto": "Vie",
-   "imp": 0,
-   "titulo": "Sin datos relevantes",
-   "eventos": [],
+   "imp": 2,
+   "titulo": "Datos secundarios",
+   "eventos": [
+    {
+     "hora": "08:45",
+     "pais": "EE. UU.",
+     "dato": "PMI manufacturero preliminar",
+     "imp": 2,
+     "prev": "55,5",
+     "ant": "57,0",
+     "lectura": "Por encima de 55,5: negativo para el oro. Por debajo: favorable.",
+     "usd": true,
+     "signo": -1
+    },
+    {
+     "hora": "08:45",
+     "pais": "EE. UU.",
+     "dato": "PMI servicios preliminar",
+     "imp": 2,
+     "prev": "58,0",
+     "ant": "58,7",
+     "lectura": "Por encima de 58,0: negativo para el oro. Por debajo: favorable.",
+     "usd": true,
+     "signo": -1
+    },
+    {
+     "hora": "09:00",
+     "pais": "EE. UU.",
+     "dato": "Confianza Michigan (final)",
+     "imp": 2,
+     "prev": "46,3",
+     "ant": "46,3",
+     "lectura": "Por encima de 46,3: negativo para el oro. Por debajo: favorable.",
+     "usd": true,
+     "signo": -1
+    },
+    {
+     "hora": "09:00",
+     "pais": "EE. UU.",
+     "dato": "Expectativas de inflación Michigan (final)",
+     "imp": 2,
+     "prev": "",
+     "ant": "4,7%",
+     "lectura": "Sin previsión publicada. Por encima de el dato anterior (4,7%): negativo para el oro. Por debajo: favorable.",
+     "usd": true,
+     "signo": -1
+    }
+   ],
    "mejor": "Dólar y rendimientos a la baja, petróleo cediendo.",
    "peor": "Dólar y rendimientos al alza, petróleo subiendo.",
    "regla": "Día de contexto: el precio lo mueven el dólar, los rendimientos, el petróleo y los titulares."
@@ -575,12 +499,11 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4186.7001953125,
-  "fecha": "2026-10-16",
-  "semana_max": 4242.2998046875,
-  "semana_min": 4095.0,
-  "semana_apertura": 4220.7998046875
+  "precio": 4202.89990234375,
+  "fecha": "2026-10-18",
+  "semana_max": null,
+  "semana_min": null
  },
- "generado": "2026-10-16T18:43-05:00",
- "modo": "diario"
+ "generado": "2026-10-18T18:47-05:00",
+ "modo": "semanal"
 }
