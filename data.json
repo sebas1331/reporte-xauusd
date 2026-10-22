@@ -463,9 +463,9 @@
      "pais": "EE. UU.",
      "dato": "PMI servicios preliminar",
      "imp": 2,
-     "prev": "57,8",
+     "prev": "57,9",
      "ant": "58,7",
-     "lectura": "Por encima de 57,8: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 57,9: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     },
@@ -499,12 +499,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4151.5,
+  "precio": 4144.2998046875,
   "fecha": "2026-10-21",
   "semana_max": 4211.2001953125,
-  "semana_min": 4124.0,
+  "semana_min": 4130.10009765625,
   "semana_apertura": 4185.0
  },
- "generado": "2026-10-21T11:39-05:00",
+ "generado": "2026-10-21T19:04-05:00",
  "modo": "diario"
 }
