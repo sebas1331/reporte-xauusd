@@ -113,7 +113,7 @@
    "alcanzable": true,
    "fuerza": 3,
    "tag": "Soporte inmediato",
-   "tocado": false
+   "tocado": true
   },
   {
    "lo": 3976,
@@ -350,9 +350,9 @@
      "pais": "EE. UU.",
      "dato": "Confianza del consumidor (CB)",
      "imp": 2,
-     "prev": "80,5",
+     "prev": "80,7",
      "ant": "81,9",
-     "lectura": "Por encima de 80,5: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 80,7: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     },
@@ -686,11 +686,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4013.10009765625,
-  "fecha": "2026-10-25",
-  "semana_max": null,
-  "semana_min": null
+  "precio": 4034.39990234375,
+  "fecha": "2026-10-26",
+  "semana_max": 4044.0,
+  "semana_min": 3990.89990234375,
+  "semana_apertura": 4012.199951171875
  },
- "generado": "2026-10-25T18:40-05:00",
- "modo": "semanal"
+ "generado": "2026-10-26T13:16-05:00",
+ "modo": "diario"
 }
