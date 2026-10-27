@@ -113,7 +113,7 @@
    "alcanzable": true,
    "fuerza": 3,
    "tag": "Soporte inmediato",
-   "tocado": true
+   "tocado": false
   },
   {
    "lo": 3976,
@@ -350,9 +350,9 @@
      "pais": "EE. UU.",
      "dato": "Confianza del consumidor (CB)",
      "imp": 2,
-     "prev": "80,7",
+     "prev": "81,2",
      "ant": "81,9",
-     "lectura": "Por encima de 80,7: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 81,2: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     },
@@ -561,9 +561,9 @@
      "pais": "EE. UU.",
      "dato": "Advance GDP Price Index q/q",
      "imp": 2,
-     "prev": "3,5%",
+     "prev": "3,3%",
      "ant": "6,2%",
-     "lectura": "Por encima de 3,5%: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 3,3%: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     },
@@ -686,12 +686,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4034.39990234375,
+  "precio": 4026.89990234375,
   "fecha": "2026-10-26",
-  "semana_max": 4044.0,
-  "semana_min": 3990.89990234375,
-  "semana_apertura": 4012.199951171875
+  "semana_max": 4033.5,
+  "semana_min": 4017.0,
+  "semana_apertura": 4032.800048828125
  },
- "generado": "2026-10-26T13:16-05:00",
+ "generado": "2026-10-26T19:38-05:00",
  "modo": "diario"
 }
