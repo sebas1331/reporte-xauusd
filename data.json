@@ -125,7 +125,7 @@
    "alcanzable": true,
    "fuerza": 1,
    "tag": "Soporte",
-   "tocado": false
+   "tocado": true
   },
   {
    "lo": 3950.0,
@@ -137,7 +137,7 @@
    "alcanzable": true,
    "fuerza": 3,
    "tag": "Soporte mayor",
-   "tocado": false
+   "tocado": true
   }
  ],
  "recap": {
@@ -612,7 +612,18 @@
      "signo": 0
     },
     {
-     "hora": "21:30",
+     "hora": "22:02",
+     "pais": "Japón",
+     "dato": "BOJ Outlook Report (Japón)",
+     "imp": 3,
+     "prev": "",
+     "ant": "",
+     "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
+     "usd": false,
+     "signo": 0
+    },
+    {
+     "hora": "22:02",
      "pais": "Japón",
      "dato": "Decisión de tipos del BoJ (Japón)",
      "imp": 3,
@@ -623,20 +634,9 @@
      "signo": 0
     },
     {
-     "hora": "21:30",
+     "hora": "22:02",
      "pais": "Japón",
      "dato": "Monetary Policy Statement (Japón)",
-     "imp": 3,
-     "prev": "",
-     "ant": "",
-     "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
-     "usd": false,
-     "signo": 0
-    },
-    {
-     "hora": "21:31",
-     "pais": "Japón",
-     "dato": "BOJ Outlook Report (Japón)",
      "imp": 3,
      "prev": "",
      "ant": "",
@@ -657,7 +657,7 @@
    "titulo": "BOJ Press Conference (Japón)",
    "eventos": [
     {
-     "hora": "00:30",
+     "hora": "01:30",
      "pais": "Japón",
      "dato": "BOJ Press Conference (Japón)",
      "imp": 3,
@@ -686,12 +686,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4015.60009765625,
-  "fecha": "2026-10-29",
+  "precio": 3896.199951171875,
+  "fecha": "2026-10-30",
   "semana_max": 4097.2001953125,
-  "semana_min": 3990.89990234375,
+  "semana_min": 3895.800048828125,
   "semana_apertura": 4012.199951171875
  },
- "generado": "2026-10-29T20:11-05:00",
+ "generado": "2026-10-30T12:44-05:00",
  "modo": "diario"
 }
