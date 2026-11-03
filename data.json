@@ -417,9 +417,9 @@
      "pais": "EE. UU.",
      "dato": "Vacantes JOLTS",
      "imp": 2,
-     "prev": "7,11M",
+     "prev": "7,15M",
      "ant": "7,08M",
-     "lectura": "Por encima de 7,11M: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 7,15M: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     },
@@ -473,9 +473,9 @@
      "pais": "EE. UU.",
      "dato": "ISM servicios",
      "imp": 2,
-     "prev": "54,9",
+     "prev": "54,8",
      "ant": "54,9",
-     "lectura": "Por encima de 54,9: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 54,8: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     }
@@ -574,7 +574,7 @@
      "pais": "Canadá",
      "dato": "Employment Change (Canadá)",
      "imp": 3,
-     "prev": "14,5K",
+     "prev": "14,6K",
      "ant": "-68,3K",
      "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
      "usd": false,
@@ -607,9 +607,9 @@
      "pais": "EE. UU.",
      "dato": "Nóminas no agrícolas",
      "imp": 3,
-     "prev": "63K",
+     "prev": "65K",
      "ant": "29K",
-     "lectura": "Por encima de 63K: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 65K: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     },
@@ -629,9 +629,9 @@
      "pais": "EE. UU.",
      "dato": "Confianza Michigan (prelim.)",
      "imp": 2,
-     "prev": "47,8",
+     "prev": "48,1",
      "ant": "46,3",
-     "lectura": "Por encima de 47,8: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 48,1: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     },
@@ -669,19 +669,19 @@
      "signo": 0
     }
    ],
-   "mejor": "Salario por hora m/m por debajo de 0,3%; Nóminas no agrícolas por debajo de 63K; Tasa de desempleo por encima de 4,2%",
-   "peor": "Salario por hora m/m por encima de 0,3%; Nóminas no agrícolas por encima de 63K; Tasa de desempleo por debajo de 4,2%",
+   "mejor": "Salario por hora m/m por debajo de 0,3%; Nóminas no agrícolas por debajo de 65K; Tasa de desempleo por encima de 4,2%",
+   "peor": "Salario por hora m/m por encima de 0,3%; Nóminas no agrícolas por encima de 65K; Tasa de desempleo por debajo de 4,2%",
    "regla": "Si salen mixtos, manda Nóminas no agrícolas. Después, confirma con la reacción del dólar y del bono a 10 años."
   }
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 3957.0,
+  "precio": 3957.39990234375,
   "fecha": "2026-11-02",
-  "semana_max": 3980.800048828125,
-  "semana_min": 3889.0,
+  "semana_max": 3974.5,
+  "semana_min": 3951.0,
   "semana_apertura": 3890.0
  },
- "generado": "2026-11-02T16:25-05:00",
+ "generado": "2026-11-02T21:58-05:00",
  "modo": "diario"
 }
