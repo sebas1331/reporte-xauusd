@@ -89,7 +89,7 @@
    "alcanzable": true,
    "fuerza": 3,
    "tag": "Resistencia",
-   "tocado": false
+   "tocado": true
   },
   {
    "lo": 3950,
@@ -676,12 +676,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 3962.39990234375,
-  "fecha": "2026-11-03",
-  "semana_max": 3980.800048828125,
+  "precio": 4072.699951171875,
+  "fecha": "2026-11-04",
+  "semana_max": 4080.800048828125,
   "semana_min": 3889.0,
   "semana_apertura": 3890.0
  },
- "generado": "2026-11-03T20:31-05:00",
+ "generado": "2026-11-04T14:24-05:00",
  "modo": "diario"
 }
