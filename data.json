@@ -101,7 +101,7 @@
    "alcanzable": true,
    "fuerza": 3,
    "tag": "Resistencia inmediata",
-   "tocado": false
+   "tocado": true
   },
   {
    "lo": 4050,
@@ -499,11 +499,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4110.7998046875,
-  "fecha": "2026-11-08",
-  "semana_max": null,
-  "semana_min": null
+  "precio": 4145.60009765625,
+  "fecha": "2026-11-09",
+  "semana_max": 4157.7001953125,
+  "semana_min": 4062.5,
+  "semana_apertura": 4074.300048828125
  },
- "generado": "2026-11-08T20:17-05:00",
- "modo": "semanal"
+ "generado": "2026-11-09T16:57-05:00",
+ "modo": "diario"
 }
