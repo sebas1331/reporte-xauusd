@@ -113,7 +113,7 @@
    "alcanzable": true,
    "fuerza": 1,
    "tag": "Soporte inmediato",
-   "tocado": false
+   "tocado": true
   },
   {
    "lo": 3989.1,
@@ -499,12 +499,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 4126.0,
-  "fecha": "2026-11-09",
+  "precio": 4037.5,
+  "fecha": "2026-11-10",
   "semana_max": 4157.7001953125,
-  "semana_min": 4062.5,
+  "semana_min": 4020.800048828125,
   "semana_apertura": 4074.300048828125
  },
- "generado": "2026-11-09T22:39-05:00",
+ "generado": "2026-11-10T14:20-05:00",
  "modo": "diario"
 }
