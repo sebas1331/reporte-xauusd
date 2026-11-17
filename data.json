@@ -428,15 +428,15 @@
      "pais": "EE. UU.",
      "dato": "Ventas minoristas m/m",
      "imp": 3,
-     "prev": "0,2%",
+     "prev": "0,1%",
      "ant": "0,8%",
-     "lectura": "Por encima de 0,2%: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 0,1%: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     }
    ],
-   "mejor": "Ventas minoristas subyacentes m/m por debajo de 0,4%; Ventas minoristas m/m por debajo de 0,2%",
-   "peor": "Ventas minoristas subyacentes m/m por encima de 0,4%; Ventas minoristas m/m por encima de 0,2%",
+   "mejor": "Ventas minoristas subyacentes m/m por debajo de 0,4%; Ventas minoristas m/m por debajo de 0,1%",
+   "peor": "Ventas minoristas subyacentes m/m por encima de 0,4%; Ventas minoristas m/m por encima de 0,1%",
    "regla": "Si salen mixtos, manda Ventas minoristas subyacentes m/m. Después, confirma con la reacción del dólar y del bono a 10 años."
   },
   {
@@ -484,7 +484,7 @@
      "pais": "Australia",
      "dato": "Employment Change (Australia)",
      "imp": 3,
-     "prev": "25,2K",
+     "prev": "25,5K",
      "ant": "-39,3K",
      "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
      "usd": false,
@@ -577,12 +577,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 3856.5,
+  "precio": 3874.300048828125,
   "fecha": "2026-11-16",
   "semana_max": 3904.300048828125,
   "semana_min": 3835.199951171875,
   "semana_apertura": 3869.699951171875
  },
- "generado": "2026-11-16T16:39-05:00",
+ "generado": "2026-11-16T23:02-05:00",
  "modo": "diario"
 }
