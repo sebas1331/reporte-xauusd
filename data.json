@@ -125,7 +125,7 @@
    "alcanzable": true,
    "fuerza": 1,
    "tag": "Soporte",
-   "tocado": false
+   "tocado": true
   },
   {
    "lo": 3700,
@@ -518,9 +518,9 @@
      "pais": "EE. UU.",
      "dato": "Índice Fed de Filadelfia",
      "imp": 2,
-     "prev": "19,2",
+     "prev": "20,6",
      "ant": "20,9",
-     "lectura": "Por encima de 19,2: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 20,6: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     },
@@ -529,9 +529,9 @@
      "pais": "EE. UU.",
      "dato": "Subsidios por desempleo",
      "imp": 2,
-     "prev": "199K",
+     "prev": "198K",
      "ant": "200K",
-     "lectura": "Por encima de 199K: favorable para el oro. Por debajo: negativo.",
+     "lectura": "Por encima de 198K: favorable para el oro. Por debajo: negativo.",
      "usd": true,
      "signo": 1
     }
@@ -552,9 +552,9 @@
      "pais": "EE. UU.",
      "dato": "Confianza Michigan (final)",
      "imp": 2,
-     "prev": "52,1",
+     "prev": "51,7",
      "ant": "51,0",
-     "lectura": "Por encima de 52,1: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 51,7: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     },
@@ -577,12 +577,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 3848.0,
+  "precio": 3796.300048828125,
   "fecha": "2026-11-17",
   "semana_max": 3904.300048828125,
-  "semana_min": 3835.199951171875,
+  "semana_min": 3793.300048828125,
   "semana_apertura": 3869.699951171875
  },
- "generado": "2026-11-17T15:29-05:00",
+ "generado": "2026-11-17T21:58-05:00",
  "modo": "diario"
 }
