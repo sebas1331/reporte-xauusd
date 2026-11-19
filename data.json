@@ -137,7 +137,7 @@
    "alcanzable": true,
    "fuerza": 1,
    "tag": "Soporte mayor",
-   "tocado": false
+   "tocado": true
   }
  ],
  "recap": {
@@ -577,12 +577,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 3742.800048828125,
-  "fecha": "2026-11-18",
+  "precio": 3672.60009765625,
+  "fecha": "2026-11-19",
   "semana_max": 3904.300048828125,
-  "semana_min": 3721.800048828125,
+  "semana_min": 3668.39990234375,
   "semana_apertura": 3869.699951171875
  },
- "generado": "2026-11-18T21:41-05:00",
+ "generado": "2026-11-19T14:58-05:00",
  "modo": "diario"
 }
