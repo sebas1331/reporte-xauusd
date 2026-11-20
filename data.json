@@ -577,12 +577,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 3672.60009765625,
+  "precio": 3537.89990234375,
   "fecha": "2026-11-19",
   "semana_max": 3904.300048828125,
-  "semana_min": 3668.39990234375,
+  "semana_min": 3533.300048828125,
   "semana_apertura": 3869.699951171875
  },
- "generado": "2026-11-19T14:58-05:00",
+ "generado": "2026-11-19T21:27-05:00",
  "modo": "diario"
 }
