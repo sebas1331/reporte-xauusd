@@ -568,6 +568,17 @@
      "lectura": "Sin previsión publicada. Por encima de el dato anterior (4,3%): negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
+    },
+    {
+     "hora": "12:00",
+     "pais": "EE. UU.",
+     "dato": "Habla President Trump",
+     "imp": 2,
+     "prev": "",
+     "ant": "",
+     "lectura": "Tono duro (más subidas) presiona al oro. Tono prudente lo apoya.",
+     "usd": true,
+     "signo": 0
     }
    ],
    "mejor": "Dólar y rendimientos a la baja, petróleo cediendo.",
@@ -577,12 +588,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 3537.89990234375,
-  "fecha": "2026-11-19",
+  "precio": 3515.10009765625,
+  "fecha": "2026-11-20",
   "semana_max": 3904.300048828125,
-  "semana_min": 3533.300048828125,
+  "semana_min": 3503.199951171875,
   "semana_apertura": 3869.699951171875
  },
- "generado": "2026-11-19T21:27-05:00",
+ "generado": "2026-11-20T14:38-05:00",
  "modo": "diario"
 }
