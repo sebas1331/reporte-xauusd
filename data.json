@@ -373,9 +373,9 @@
      "pais": "EE. UU.",
      "dato": "Confianza del consumidor (CB)",
      "imp": 2,
-     "prev": "92,1",
+     "prev": "92,4",
      "ant": "91,7",
-     "lectura": "Por encima de 92,1: negativo para el oro. Por debajo: favorable.",
+     "lectura": "Por encima de 92,4: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
     },
@@ -395,7 +395,7 @@
      "pais": "Australia",
      "dato": "IPC a/a (Australia)",
      "imp": 3,
-     "prev": "4,8%",
+     "prev": "4,7%",
      "ant": "4,3%",
      "lectura": "Contexto global. Afecta al oro sobre todo a través del dólar.",
      "usd": false,
@@ -456,17 +456,6 @@
      "lectura": "Por encima de 2,3%: negativo para el oro. Por debajo: favorable.",
      "usd": true,
      "signo": -1
-    },
-    {
-     "hora": "08:30",
-     "pais": "EE. UU.",
-     "dato": "Subsidios por desempleo",
-     "imp": 2,
-     "prev": "201K",
-     "ant": "203K",
-     "lectura": "Por encima de 201K: favorable para el oro. Por debajo: negativo.",
-     "usd": true,
-     "signo": 1
     }
    ],
    "mejor": "PCE subyacente m/m por debajo de 0,3%; PIB preliminar t/t por debajo de 3,5%",
@@ -510,11 +499,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 3605.199951171875,
-  "fecha": "2026-11-22",
-  "semana_max": null,
-  "semana_min": null
+  "precio": 3629.5,
+  "fecha": "2026-11-23",
+  "semana_max": 3641.300048828125,
+  "semana_min": 3628.199951171875,
+  "semana_apertura": 3636.39990234375
  },
- "generado": "2026-11-22T21:03-05:00",
- "modo": "semanal"
+ "generado": "2026-11-23T18:24-05:00",
+ "modo": "diario"
 }
