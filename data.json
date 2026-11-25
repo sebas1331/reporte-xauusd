@@ -125,7 +125,7 @@
    "alcanzable": true,
    "fuerza": 3,
    "tag": "Soporte",
-   "tocado": false
+   "tocado": true
   },
   {
    "lo": 3400,
@@ -499,12 +499,12 @@
  ],
  "calendario_ok": true,
  "vivo": {
-  "precio": 3548.39990234375,
-  "fecha": "2026-11-24",
+  "precio": 3603.199951171875,
+  "fecha": "2026-11-25",
   "semana_max": 3691.0,
-  "semana_min": 3532.39990234375,
+  "semana_min": 3453.800048828125,
   "semana_apertura": 3570.5
  },
- "generado": "2026-11-24T23:23-05:00",
+ "generado": "2026-11-25T16:05-05:00",
  "modo": "diario"
 }
